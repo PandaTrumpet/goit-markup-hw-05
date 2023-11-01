@@ -57,23 +57,34 @@
                 </svg>
                 <fieldset class="form-title">Leave your contacts and we will call you back</fieldset>
 
-                <label class="title-input"  for="contact">Name</label>
+               
                 <div class="icon-person-black-container">
+                    <label class="title-input"  for="contact">Name</label>
                 <input class="hero-input text" type="text" id="contact" name="contact" >
-                <svg class="icon-person-black" width="16" height="16">
+                <svg class="icon-person-black icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
                   </div>
+                    <div class="icon-phone-container">
+                        <label class="title-input" for="phone">Phone</label>
+                        <input class="hero-input text" type="tel" id="phone" name="number">
+                        <svg  class="icon-phone" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                        <div class="icon-email-container">
+                            <label class="title-input " for="mail">Email</label>
+                         <input class="hero-input text" type="email" id="mail" name="email">
+                            <svg  class="icon-email" width="18" height="24">
+                                <use href="./images/icons.svg#icon-email-black"></use>>
+                            </svg>
+                        </div>
 
-
-                <label class="title-input" for="phone">Phone</label>
-                <input class="hero-input" type="tel" id="phone" name="number">
-                <label class="title-input" for="mail">Email</label>
-                <input class="hero-input" type="email" id="mail" name="email">
-                <label class="title-input" for="comment">Comment</label>
-                <textarea class="comment-form form-text"  name="comment" id="comment" placeholder="Text input"></textarea>
-                <div class="checkbox-icon-container">
-                  <svg class="checkbox-icon" width="16" height="16">
+                   <label class="title-input" for="comment">Comment
+                    <textarea class="comment-form form-text"  name="comment" id="comment" placeholder="Text input"></textarea>
+                </label> 
+                   <div class="checkbox-icon-container">
+                    <svg class="checkbox-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
                 <p class="modal-paragraph">I accept the terms and conditions of the <span class="modal-span">Privacy Policy</span></p>
@@ -431,21 +442,29 @@
             </li>
         </ul>
         </div>
+
+
+
         <div class="subscribe-container">
-            <label for="subscribe">
-                <span class="title-input-footer">Subscribe</span>
-                <input class="down-input" type="email" id="subscribe" placeholder="E-mail">
-            </label>
-            <div class="subscribe-container-btn">
-                <button class="footer-btn" type="submit">Subscribe
-                    <a class="footer-btn-link" href="">
-                        <svg width="24" height="24">
-                            <use href="./images/icons.svg#icon-frame" ></use>
-                        </svg>
-                    </a>
-                </button>
-               </div>
+            <p class="title-input-footer">Subscribe</p>
+                
+                <form class="footer-form">
+                    <label for="subscribe">
+                        <input class="down-input" type="email" id="subscribe" placeholder="E-mail">
+                    </label>
+                    <button class="footer-btn" type="submit">Subscribe
+                       
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-frame" ></use>
+                            </svg>
+                    
+                    </button>
+                </form>
+                
         </div>
+        <div class="subscribe-container-btn">
+           
+           </div>
       
         </div>
     </footer>
