@@ -420,20 +420,20 @@
       
         </div>
     </footer>
-<!-- <div class="madal-container-main"> -->
 
+<!-- MODAL WINDOW -->
 <div class="backdrop is-open">
     
    <div class="modal-container">
     <button class="modal-btn-up" type="button">
-        <svg class="close-icon" width="24" height="24" aria-label="modal close button">
+        <svg class="close-icon" width="8" height="8" aria-label="modal close button">
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
     </button> 
 <p class="form-title">Leave your contacts and we will call you back</p>
 
 
-<!-- <div class="modal-form-container"> -->
+
 <form class="modal-form">
   <div class="contact-input-container">
     <label class="contact-name" for="user-name">Name</label>
@@ -454,8 +454,9 @@
 
     <div class="contact-input-container">
     <label class="contact-name" for="user-phone">Phone</label>
-    <div class="tel-icon-container">
-    <input class="tel-input form-focus"
+
+    <div class="contact-icon-container">
+    <input class="contact-input form-focus"
      type="tel"
       name="user_phone"
        id="user-phone"
@@ -471,8 +472,8 @@
 
     <div class="contact-input-container">
     <label class="contact-name" for="user-email">Email</label>
-    <div class="icon-email-container">
-    <input class="post-form form-focus" 
+    <div class="contact-icon-container">
+    <input class="contact-input form-focus" 
     type="email" 
     required
     id="user-email"
@@ -485,16 +486,16 @@
 
         <div class="area-container">
         <label class="area-title" for="user-comment">Comment</label>
-        <textarea class="area" name="user_comment" id="user-comment" placeholder="Text input"></textarea>
+        <textarea class="area" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
         </div>
 
 <div class="checkbox-container">
 <input type="checkbox" 
-name="user-policy"
- id="user_policy"
+name="user-privacy"
+ id="user-privacy"
  value="true"
  required>
-<label class="checkbox-text" for="user_policy">
+<label class="checkbox-text" for="user-privacy">
     <span class="checkbox-span">
         <svg class="checkbox-span-icon" width="16" height="16">
             <use href="./images/icons.svg#icon-checkbox"></use>
