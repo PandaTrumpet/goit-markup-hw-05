@@ -1066,8 +1066,12 @@ letter-spacing: 0.04em;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
-margin-left: 8px;
+/* margin-left: 8px; */
 width: 338px;
+/* display: flex;
+justify-content: center;
+align-items: center; */
+
 }
 .checkbox-span {
     color: #4D5AE5;
@@ -1099,3 +1103,22 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn-down:focus,
 .modal-btn-down:active {
     background-color: #404BBF;}
+
+    .checkbox-span {
+        display: inline-flex;
+        width: 16px;
+        height: 16px;
+        justify-self: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 8px;
+        
+    }
+    .checkbox-span-icon {
+        stroke-width: 1px;
+        /* stroke:  rgba(46, 47, 66, 0.40); */
+        fill: none;
+      
+        fill: transparent;
+        
+    }
