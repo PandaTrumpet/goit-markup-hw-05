@@ -809,8 +809,6 @@ pointer-events: auto;
     border: 1px solid #2E2F42;
     border-radius: 4px;
 background-color: #FCFCFC;
-
-
 padding: 24px;
 
 
@@ -818,7 +816,7 @@ padding: 24px;
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    /* gap: 8px; */
 }
 .modal-btn-up {
     width: 24px;
@@ -874,7 +872,7 @@ padding-bottom: 0;
 padding-top: 0;
 padding-left: 0;
 padding-right: 0;
-margin-top: 72px;
+margin-top: 48px;
 margin-bottom: 16px;
 }
 
@@ -888,6 +886,7 @@ margin-bottom: 16px;
     flex-direction: column;
     gap: 4px;
     position: relative;
+    margin-bottom: 8px;
 }
 .contact-name {
 color: #8E8F99;
@@ -895,11 +894,16 @@ font-size: 12px;
 font-weight: 400;
 line-height: 1.17;
 letter-spacing: 0.04em;
+display: block;
+}
+.contact-icon-container {
+    position: relative;
 }
 .contact-icon {
     position: absolute;
     left: 16px;
-    top: 28px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-icon:hover {
@@ -908,7 +912,7 @@ letter-spacing: 0.04em;
 .contact-input {
     padding-left: 38px;
     height: 40px;
-    width: 360px;
+    width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
     border-radius: 4px;
@@ -918,14 +922,19 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-focus:hover,
 .form-focus:focus,
 .form-focus:active {
-   
+   outline-color: transparent;
+   outline-offset: 4px;
 border: 1px solid #4D5AE5;
 }
-
+/* Убрать ховер и актив  и записать в конспект*/
 .tel-container {
     display: flex;
 flex-direction: column;
 position: relative;
+margin-bottom: 8px;
+}
+.tel-icon-container {
+    position: relative;
 }
 .tel-title {
 margin-bottom: 4px;
@@ -934,12 +943,13 @@ color:  #8E8F99;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
+display: block;
 }
 
 .tel-input {
     padding-left: 38px;
     height: 40px;
-    width: 360px;
+    width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
     border-radius: 4px;
@@ -949,7 +959,8 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .phone-icon {
     position: absolute;
     left: 16px;
-    top: 26px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-icon:hover {
@@ -961,6 +972,10 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 8px;
+}
+.icon-email-container {
+    position: relative;
 }
 .email-title {
     margin-bottom: 4px;
@@ -969,12 +984,13 @@ color:  #8E8F99;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
+display: block;
 }
 
 .post-form {
     padding-left: 38px;
     height: 40px;
-    width: 360px;
+    width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
     border-radius: 4px;
@@ -984,7 +1000,8 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .email-icon {
     position: absolute;
     left: 16px;
-    top: 26px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 .email-icon:hover {
@@ -994,6 +1011,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .area-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
 }
 
 .area-title {
@@ -1003,18 +1021,22 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: block;
     }
 
 .area {
-    width: 360px;
+    width: 100%;
     height: 120px;
     resize: none;
-    padding-top: 8px;
-    padding-left: 16px;
-
+    padding: 8px 16px;
     border-radius: 4px;
 border: 1px solid rgba(46, 47, 66, 0.40);
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.area:focus {
+    outline-color: transparent;
+    outline-offset: 4px;
+    border: 1px solid #4D5AE5;
 }
 .area::placeholder {
     color:  rgba(46, 47, 66, 0.40);
@@ -1031,6 +1053,7 @@ letter-spacing: 0.04em;
 .checkbox-container {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 .checkbox-text {
     color: #8E8F99;
@@ -1042,6 +1065,7 @@ width: 338px;
 }
 .checkbox-span {
     color: #4D5AE5;
+    text-decoration: underline;
 }
 
 .modal-btn-down {
